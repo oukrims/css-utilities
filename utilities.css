@@ -1,0 +1,212 @@
+/** utilities **/
+
+body {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.42857143;
+}
+/** color classes
+ ====================================*/
+
+.lk-barnd{
+    background-color: #3788DE;
+}
+.lk-secondary-brand{
+    background-color: #99a9bf;
+}
+.lk-red{
+    background-color: #FC494E;
+}
+
+
+
+/* Links
+   ========================================================================== */
+
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+    background-color: transparent;
+    text-decoration-style: none;
+}
+
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+
+/**
+============================================= text  utilities **/
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-lowercase {
+    text-transform: lowercase;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+
+/*
+=================================== positioning utilities
+*/
+/* blocks that needs to be placed under floats */
+.clear {
+  clear: both;
+}
+
+/* blocks that must contain floats */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+  border-collapse: collapse;
+}
+
+/* simple blocks alignment */
+.lk-left {
+  margin-right: auto;
+}
+
+.lk-right {
+  margin-left: auto;
+}
+
+.lk-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* floating elements */
+.lk-fl {
+  float: left;
+}
+
+img.fl {
+  margin-right: 1rem;
+}
+
+.lk-fr {
+  float: right;
+}
+
+img.fr {
+  margin-left: 1rem;
+}
+
+img.fl,
+img.fr {
+  margin-bottom: 0.5rem;
+}
+
+/* Grid
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; }
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box; }
+
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+  .container {
+    width: 85%;
+    padding: 0; }
+}
+
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+  .lk-container {
+    width: 80%; }
+  .lk-column,
+  .lk-columns {
+    margin-left: 4%; }
+  .lk-column:first-child,
+  .lk-columns:first-child {
+    margin-left: 0; }
+
+  .lk-one.column,
+  .lk-one.columns                    { width: 4.66666666667%; }
+  .lk-two.columns                    { width: 13.3333333333%; }
+  .lk-three.columns                  { width: 22%;            }
+  .lk-four.columns                   { width: 30.6666666667%; }
+  .lk-five.columns                   { width: 39.3333333333%; }
+  .lk-six.columns                    { width: 48%;            }
+  .lk-seven.columns                  { width: 56.6666666667%; }
+  .lk-eight.columns                  { width: 65.3333333333%; }
+  .lk-nine.columns                   { width: 74.0%;          }
+  .lk-ten.columns                    { width: 82.6666666667%; }
+  .lk-eleven.columns                 { width: 91.3333333333%; }
+  .lk-twelve.columns                 { width: 100%; margin-left: 0; }
+
+  .lk-one-third.column               { width: 30.6666666667%; }
+  .lk-two-thirds.column              { width: 65.3333333333%; }
+
+  .lk-one-half.column                { width: 48%; }
+
+  /* Offsets */
+  .lk-offset-by-one.column,
+  .lk-offset-by-one.columns          { margin-left: 8.66666666667%; }
+  .lk-offset-by-two.column,
+  .lk-offset-by-two.columns          { margin-left: 17.3333333333%; }
+  .lk-offset-by-three.column,
+  .lk-offset-by-three.columns        { margin-left: 26%;            }
+  .lk-offset-by-four.column,
+  .lk-offset-by-four.columns         { margin-left: 34.6666666667%; }
+  .lk-offset-by-five.column,
+  .lk-offset-by-five.columns         { margin-left: 43.3333333333%; }
+  .lk-offset-by-six.column,
+  .lk-offset-by-six.columns          { margin-left: 52%;            }
+  .lk-offset-by-seven.column,
+  .lk-offset-by-seven.columns        { margin-left: 60.6666666667%; }
+  .lk-offset-by-eight.column,
+  .lk-offset-by-eight.columns        { margin-left: 69.3333333333%; }
+  .lk-offset-by-nine.column,
+  .lk-offset-by-nine.columns         { margin-left: 78.0%;          }
+  .lk-offset-by-ten.column,
+  .lk-offset-by-ten.columns          { margin-left: 86.6666666667%; }
+  .lk-offset-by-eleven.column,
+  .lk-offset-by-eleven.columns       { margin-left: 95.3333333333%; }
+
+  .lk-offset-by-one-third.column,
+  .lk-offset-by-one-third.columns    { margin-left: 34.6666666667%; }
+  .lk-offset-by-two-thirds.column,
+  .lk-offset-by-two-thirds.columns   { margin-left: 69.3333333333%; }
+
+  .offset-by-one-half.column,
+  .offset-by-one-half.columns     { margin-left: 52%; }
+
+}
+
